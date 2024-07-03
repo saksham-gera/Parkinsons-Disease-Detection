@@ -1,6 +1,4 @@
 # Detecting Parkinsons with ML
-[![Open Word-Level In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pshah123/parkinsons-AI/blob/master/Train.ipynb)
-
 We'll use the data from UC Irvine's amazing dataset repository, specifically the [Parkinsons ML database](https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/).
 
 There are two datasets within this. The first is in the root folder (`parkinsons.data` which is included here too) and can be used to detect Parkinsons. The second is within the `telemonitoring/` directory and contains UDPR scores for us to predict.
@@ -45,12 +43,7 @@ A Tsanas, MA Little, PE McSharry, LO Ramig (2009)
 IEEE Transactions on Biomedical Engineering (to appear).
 ```
 
-**If you use this repo please cite it:**
 
-```
-Cuuupid 💔. (2018, April 4). Detecting Parkinsons with AI (Version DOI). Zenodo. 
-http://doi.org/10.5281/zenodo.1211859
-```
 
 Bibtex:
 ```
@@ -60,6 +53,5 @@ Bibtex:
   month        = apr,
   year         = 2018,
   doi          = {10.5281/zenodo.1211859},
-  url          = {https://doi.org/10.5281/zenodo.1211859}
 }
 ```
