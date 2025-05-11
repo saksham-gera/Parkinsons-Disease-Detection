@@ -1,0 +1,7 @@
+xgboost
+keras
+scikit-learn
+pandas
+numpy
+tensorflow
+tensorflow-gpu
