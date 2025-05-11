@@ -3,9 +3,10 @@ import numpy as np
 import os, sys
 
 #Extract the features and the predictors
-data = pd.read_csv('parkinsons.data')
+data = pd.read_csv('./parkinsons.data')
 predictors = data.drop(['name'], axis = 1)
-predictors = predictors.drop(['status'], axis = 1).as_matrix()
+predictors = predictors.drop(['status'], axis = 1).values
+
 target = data['status']
 
 from sklearn.preprocessing import MinMaxScaler
@@ -30,5 +31,14 @@ print(metrics.accuracy_score(Y_test, y_pred))
 print(metrics.classification_report(Y_test, y_pred))
 print(metrics.confusion_matrix(Y_test, y_pred))
 
+import pickle
+
+# Save the trained model
+with open("model.pkl", "wb") as f:
+    pickle.dump(model, f)
+
+# Save the scaler so the API uses same transformation
+with open("scaler.pkl", "wb") as f:
+    pickle.dump(scaler, f)
 
 # Now we are gonna try fine-tuning KNeighborsCclassifier() aka beat 97.959% 
