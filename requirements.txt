@@ -1,7 +1,6 @@
-xgboost
-keras
+fastapi
+uvicorn
+pydantic
 scikit-learn
 pandas
 numpy
-tensorflow
-tensorflow-gpu
